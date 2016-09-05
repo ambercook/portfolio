@@ -1,0 +1,71 @@
+.intro {
+	margin-top: 5em;
+	overflow: hidden;
+	background-color: lighten( $primary-color, 2 );
+	text-align: center;
+	position: relative;
+	padding-bottom: calc( 5em + 70px );
+
+	&:before {
+      content: '\002767';
+      font-size: 100em;
+      line-height: 500px;
+      color: $primary-color;
+      top: 0px;
+      left: 0px;
+      display: block;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+    }	
+
+	&_tagline {
+		color: $heading-color;
+	}
+
+	&_arrow {
+    	margin-left: -0;
+
+    	&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: calc(50% - 70px);
+			left: -70px;
+			z-index: 10;
+			border-left: 70px solid transparent;
+			border-right: 70px solid transparent;
+			border-top: 70px solid transparent;
+			border-bottom: 70px solid $background-color;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: calc(50% - 70px);
+			right: -70px;
+			z-index: 10;
+			border-left: 70px solid transparent;
+			border-right: 70px solid transparent;
+			border-top: 70px solid transparent;
+			border-bottom: 70px solid $background-color;			
+		}
+    }
+
+
+	&_skills {
+		display: inline-block;
+		margin: 0 auto;
+		color: $heading-color;
+
+		li {
+			font-family: $font-family-headings;
+			font-size: 1.3em;
+			font-weight: bold;
+			display: inline-block;
+			text-align: center;
+			padding: 0 1em;
+		}
+	}
+}

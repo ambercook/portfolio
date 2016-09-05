@@ -1,0 +1,24 @@
+.bookend {
+	color: $primary-color--light;
+	background-color: $primary-color;
+	padding: 1em 0;
+
+
+	a {
+		color: $primary-color--light;
+		text-decoration: none;
+		display: block;
+
+		&:hover {
+			color: lighten( $primary-color--light, 10 );
+		}
+	}
+
+
+	&--footer {
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

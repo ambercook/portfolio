@@ -686,10 +686,13 @@ h3, .h3 {
     z-index: -10;
     background-color: #e0dfe2;
     transition: height 0.2s ease-in, color 0.5s ease; }
-  .section a:hover {
+  .section a:hover, .section a:focus, .section a:active {
     color: #555563; }
-    .section a:hover:before {
+    .section a:hover:before, .section a:focus:before, .section a:active:before {
       height: 100%; }
+
+.section {
+  padding: 5em 0; }
 
 .bookend {
   color: #dcd6de;
@@ -726,9 +729,6 @@ h3, .h3 {
     .header_nav_list li {
       padding: 0 2em;
       display: inline-block; }
-
-.section {
-  padding: 5em 0; }
 
 .intro {
   margin-top: 5em;
@@ -833,11 +833,12 @@ h3, .h3 {
     position: absolute;
     width: 100%; }
   .contact_form input, .contact_form textarea {
-    padding: 0.8em;
+    padding: 0.4em 0.8em;
     display: inline-block;
     background-color: #fff;
     border: 3px solid #dbdadd;
-    transition: border 0.2s; }
+    transition: border 0.2s;
+    height: auto; }
     .contact_form input:hover, .contact_form textarea:hover {
       border: 3px solid #a7a4ad; }
     .contact_form input:focus, .contact_form textarea:focus {
