@@ -1,0 +1,19 @@
+
+	<section class="work">
+
+		<div class="container">
+
+			<h2>I've worked on...</h2>
+		
+			<ul class="work_list">
+				{% for work in site.data.work.portfolio %}
+				<li>
+					<a href={{ work.url }}>
+						{{ work.client }}
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</section>

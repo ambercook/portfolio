@@ -1,0 +1,16 @@
+
+	<section class="intro">
+
+		<div class="container">
+
+			<p class="intro_tagline">{{ site.portfolio.tagline }}</p> 
+
+			<ul class="intro_tech">
+				{% for tech in site.portfolio.tech %}
+				<li>{{ tech }}</li>
+				{% endfor %}
+			</ul>
+			
+		</div>
+
+	</section>
