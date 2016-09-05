@@ -3,7 +3,7 @@ portfolio:
  tagline: "I create responsive, interactive user experiences with modern front-end technologies."
  tech: 
   - JavaScript
-  - React (+Native)
+  - React
   - AngularJS
   - Backbone
   - Gulp

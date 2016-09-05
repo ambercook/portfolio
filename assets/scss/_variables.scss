@@ -1,7 +1,17 @@
+//colors
+$primary-color: #736f7c;
+$primary-color--light: #dcd6de;
+$secondary-color: #9e5e87;
+$link-color: $secondary-color;
+$white-color: #fff;
 
+$heading-color: #363633;
+$body-color: #555563;
 
-// Typography
-$font-family: "Ek Mukta", Arial, sans-serif;
-$font-family-headings: "Sorts Mill Goudy", Georgia, serif;
+$background-color: $white-color;
+// typography
+$font-family: 'Ek Mukta', Arial, sans-serif;
+$font-family-headings: 'Sorts Mill Goudy', Georgia, serif;
 
-$bp-larger-than-phablet: "min-width: 750px";
+//breakpoints
+$bp-larger-than-phablet: 'min-width: 850px';

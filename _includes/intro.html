@@ -1,11 +1,14 @@
 
-	<section class="intro">
+	<section class="section intro">
+
+		<!-- I know, I know, empty tags solely for layout purposes aren't cool. But I really wanted the cool arrow effect I've got going on here, and I'm going to have to add superfluous markup to support it either way due to how I add the intro background ornament. I never said I was the hero Gotham deserves... -->
+		<span class="intro_arrow"></span>
 
 		<div class="container">
 
-			<p class="intro_tagline">{{ site.portfolio.tagline }}</p> 
+			<p class="intro_tagline h1">{{ site.portfolio.tagline }}</p> 
 
-			<ul class="intro_tech">
+			<ul class="intro_skills">
 				{% for tech in site.portfolio.tech %}
 				<li>{{ tech }}</li>
 				{% endfor %}
