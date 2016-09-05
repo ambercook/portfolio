@@ -1,4 +1,4 @@
-imagedir: "assets/images/work/"
+imagedir: "assets/images/work"
 portfolio:
  - client: "RAM"
    url: "http://ramtrucks.com"
@@ -18,5 +18,5 @@ portfolio:
    alt: "A thumbnail of the Fenway Sports Management website."
  - client: "SNAP - AutoMagic Lock"
    url: "http://www.sapientsnap.com/automagic-lock/"
-   image: "lock.png"
+   image: "automagiclock.png"
    alt: "A picture of the AutoMagic Lock prototype."

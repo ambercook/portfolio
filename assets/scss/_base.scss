@@ -3,3 +3,30 @@ body {
 }
 
 
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	font-family: $font-family-headings;
+}
+
+
+
+
+.work_container {
+	overflow: hidden;
+}
+
+.work_item_img-container {
+	overflow: hidden;
+	height: 250px;
+	display: block;
+}
+
+.work_item_img-container_img {
+	width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+

@@ -5,15 +5,42 @@
 
 			<h2>I've worked on...</h2>
 		
-			<ul class="work_list">
-				{% for work in site.data.work.portfolio %}
-				<li>
-					<a href={{ work.url }}>
-						{{ work.client }}
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
+			
+
+			{% for work in site.data.work.portfolio %}
+			
+				{% capture parity %}{% cycle 'even', 'odd' %}{% endcapture %}
+
+				{% if parity == 'even' %}
+
+				<div class="row work">
+
+				{% endif %}
+
+
+					<div class="six columns">
+						<a href="{{ work.url }}" class="work_item">
+							
+							<h3>{{ work.client }}</h3>
+							<span class="work_item_img-container">
+								<img 
+									src="{{ site.data.work.imagedir }}/{{ work.image }}"
+									alt="{{ work.alt }}"
+									class="work_item_img-container_img">
+							</span>
+						</a>
+					</div>
+
+
+				{% if parity == 'odd' %}
+				</div>
+				{% endif %}
+
+			{% endfor %}
+
+			</div>
+
+			
 		</div>
 
 	</section>

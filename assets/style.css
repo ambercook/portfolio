@@ -204,7 +204,7 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Roboto", Georgia, serif;
+  font-family: "Ek Mukta", Arial, sans-serif;
   color: #222; }
 
 a {
@@ -267,7 +267,7 @@ h6 {
   line-height: 1.6;
   letter-spacing: 0; }
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   h1 {
     font-size: 5.0rem; }
   h2 {
@@ -313,7 +313,7 @@ p {
     width: 85%;
     padding: 0; } }
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,
@@ -629,4 +629,22 @@ form {
   margin-bottom: 2.5rem; }
 
 body {
-  font: normal 1.4em/1.55em "Roboto", Georgia, serif; }
+  font: normal 1.4em/1.55em "Ek Mukta", Arial, sans-serif; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-family: "Sorts Mill Goudy", Georgia, serif; }
+
+.work_container {
+  overflow: hidden; }
+
+.work_item_img-container {
+  overflow: hidden;
+  height: 250px;
+  display: block; }
+
+.work_item_img-container_img {
+  width: 90%;
+  height: auto;
+  margin: 0 auto; }
