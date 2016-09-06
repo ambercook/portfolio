@@ -1,19 +1,7 @@
 .bookend {
-	color: $primary-color--light;
+	color: lighten( $heading-color, 20 );
 	background-color: $primary-color;
 	padding: 1em 0;
-
-
-	a {
-		color: $primary-color--light;
-		text-decoration: none;
-		display: block;
-
-		&:hover {
-			color: lighten( $primary-color--light, 10 );
-		}
-	}
-
 
 	&--footer {
 

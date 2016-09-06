@@ -1,41 +1,44 @@
 .work {
 
-	a.work_item {
+	.work_item {
 		margin-top: 2em;
 		text-align: center;
 		display:  block;
 		position: relative;
 		padding: .5em;
+		overflow: hidden;
 
 		&:before {
-			content: none;
+			content: '';
+			width: 100%;
 			height: 0px;
+			display: block;
+			position: absolute;
+			top: 2.5em;
+			left: 0;
+			z-index: -10;
+			background-color: lighten( $primary-color, 4 );
+			transition: height 0.2s ease-in, color 0.5s ease;
 		}
-		
 
-		&:hover {
+		&:hover, &:active, &:focus {
 
-			&:before {
-				content: '';
-				background-color: rgba( $primary-color--light, .4 );
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
+			.work_item_header:before {
 				height: 100%;
-				display: block;
 			}
 		}
-
 	}
 
 	&_item_img-container {
+
+		padding: 1em;
+		display: block;
 
 		&_img {
 
 			width: 90%;
 	    	height: auto;
-	    	box-shadow: 0px 0px 3px $primary-color--light;
+	    	box-shadow: 0px 0px 3px $body-color;
 
 		}
 	}

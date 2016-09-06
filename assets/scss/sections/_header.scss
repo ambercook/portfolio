@@ -7,18 +7,34 @@
 
 	&_logo {
 		display: inline-block;
+		text-decoration: none;
+
+		&:hover, &:focus, &:active {
+
+			.header_logo_title {
+				color: darken( $heading-color, 15 );
+			}
+
+			.header_logo_subtitle {
+				color: darken( lighten( $heading-color, 20 ), 15 );
+			}
+		}
 
 		&_title {
+			color: $heading-color;
 			font-size: 2em;
-			font-style: italic;
+			font-family: $font-family-headings--italic;
 			line-height: 2em;
 			letter-spacing: 0;
 			margin-bottom: -0.4em;
+			transition: color 0.5s;
 		}
 
 		&_subtitle {
 			font-size: .9em;
 			line-height: 0.5em;
+			color: lighten( $heading-color, 20 );
+			transition: color 0.5s;
 		}
 	}
 

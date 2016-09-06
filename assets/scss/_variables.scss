@@ -1,17 +1,28 @@
-//colors
+/*
+
 $primary-color: #736f7c;
 $primary-color--light: #dcd6de;
 $secondary-color: #9e5e87;
 $link-color: $secondary-color;
-$white-color: #fff;
 
-$heading-color: #363633;
-$body-color: #555563;
+ *///colors
+$primary-color: #a1d1d3;
+$primary-color--light: #fff;
+$secondary-color: #192323;
+$link-color: $secondary-color;
+$white-color: #fff;
+$black-color: #000;
+
+$heading-color: #345758;
+$body-color: #617a89; //#454a49;
 
 $background-color: $white-color;
 // typography
-$font-family: 'Ek Mukta', Arial, sans-serif;
-$font-family-headings: 'Sorts Mill Goudy', Georgia, serif;
+$font-family: 'Source Sans Pro Regular', Arial, sans-serif;
+$font-family--bold: 'Source Sans Pro Bold', Arial, sans-serif;
+
+$font-family-headings: 'Sorts Mill Goudy Regular', Time, 'Times New Roman', serif;
+$font-family-headings--italic: 'Sorts Mill Goudy Italic', Time, 'Times New Roman', serif;
 
 //breakpoints
 $bp-larger-than-phablet: 'min-width: 850px';

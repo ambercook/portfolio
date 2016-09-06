@@ -1,3 +1,43 @@
+@font-face {
+  font-family: 'Ek Mukta Regular';
+  src: url("fonts/EkMukta-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Ek Mukta Bold';
+  src: url("fonts/EkMukta-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sorts Mill Goudy Regular';
+  src: url("fonts/SortsMillGoudy-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Sorts Mill Goudy Italic';
+  src: url("fonts/SortsMillGoudy-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url("fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url("fonts/SourceSansPro-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("fonts/Roboto-Bold.ttf") format("truetype"); }
+
+/*
+
+$primary-color: #736f7c;
+$primary-color--light: #dcd6de;
+$secondary-color: #9e5e87;
+$link-color: $secondary-color;
+
+ */
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -204,13 +244,13 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Ek Mukta", Arial, sans-serif;
+  font-family: "Source Sans Pro Regular", Arial, sans-serif;
   color: #222; }
 
 a {
-  color: #9e5e87; }
+  color: #192323; }
   a:hover {
-    color: #8e5479; }
+    color: #0e1414; }
 
 hr {
   margin-top: 3rem;
@@ -409,7 +449,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #9e5e87;
+  color: #192323;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -428,7 +468,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #9e5e87;
+  color: #192323;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -468,35 +508,35 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #736f7c;
-  border-color: #736f7c; }
+  background-color: #a1d1d3;
+  border-color: #a1d1d3; }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
-  background-color: #736f7c;
-  border-color: #736f7c; }
+  background-color: #a1d1d3;
+  border-color: #a1d1d3; }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #9e5e87;
-  border-color: #9e5e87; }
+  background-color: #192323;
+  border-color: #192323; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #9e5e87;
-  border-color: #9e5e87; }
+  background-color: #192323;
+  border-color: #192323; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #9e5e87;
-  border-color: #9e5e87; }
+  background-color: #192323;
+  border-color: #192323; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #9e5e87;
-  border-color: #9e5e87; }
+  background-color: #192323;
+  border-color: #192323; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
@@ -531,12 +571,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #736f7c;
+  border: 1px solid #a1d1d3;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #736f7c;
+  border: 1px solid #a1d1d3;
   outline: 0; }
 
 label,
@@ -629,15 +669,15 @@ form {
   margin-bottom: 2.5rem; }
 
 body {
-  font-family: "Ek Mukta", Arial, sans-serif;
+  font-family: "Source Sans Pro Regular", Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.7em;
-  color: #555563; }
+  font-size: 1.55em;
+  color: #617a89; }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  font-family: "Sorts Mill Goudy", Georgia, serif; }
+  font-family: "Sorts Mill Goudy Regular", Time, "Times New Roman", serif; }
   h1:not(a) h1, .h1:not(a) h1,
   h2:not(a) h1, .h2:not(a) h1,
   h3:not(a) h1, .h3:not(a) h1, h1:not(a) .h1, .h1:not(a) .h1,
@@ -663,7 +703,7 @@ h3, .h3 {
   h3, h1:not(a) .h3, .h1:not(a) .h3,
   h2:not(a) .h3, .h2:not(a) .h3,
   h3:not(a) .h3, .h3:not(a) .h3 {
-    color: #363633; }
+    color: #345758; }
 
 h3, .h3 {
   font-size: 1.5em;
@@ -673,8 +713,10 @@ h3, .h3 {
 .section a {
   position: relative;
   text-decoration: none;
-  font-weight: bold;
-  z-index: 5; }
+  font-family: "Source Sans Pro Bold", Arial, sans-serif;
+  z-index: 5;
+  display: inline-block;
+  color: #000; }
   .section a:before {
     content: '';
     width: 100%;
@@ -684,26 +726,18 @@ h3, .h3 {
     bottom: .1em;
     left: 0;
     z-index: -10;
-    background-color: #e0dfe2;
+    background-color: #afd8da;
     transition: height 0.2s ease-in, color 0.5s ease; }
-  .section a:hover, .section a:focus, .section a:active {
-    color: #555563; }
-    .section a:hover:before, .section a:focus:before, .section a:active:before {
-      height: 100%; }
+  .section a:hover:before, .section a:active:before, .section a:focus:before {
+    height: 100%; }
 
 .section {
   padding: 5em 0; }
 
 .bookend {
-  color: #dcd6de;
-  background-color: #736f7c;
+  color: #5a9698;
+  background-color: #a1d1d3;
   padding: 1em 0; }
-  .bookend a {
-    color: #dcd6de;
-    text-decoration: none;
-    display: block; }
-    .bookend a:hover {
-      color: #f4f2f5; }
   .bookend--footer p {
     margin-bottom: 0; }
 
@@ -714,16 +748,25 @@ h3, .h3 {
   width: 100%;
   z-index: 20; }
   .header_logo {
-    display: inline-block; }
+    display: inline-block;
+    text-decoration: none; }
+    .header_logo:hover .header_logo_title, .header_logo:focus .header_logo_title, .header_logo:active .header_logo_title {
+      color: #182728; }
+    .header_logo:hover .header_logo_subtitle, .header_logo:focus .header_logo_subtitle, .header_logo:active .header_logo_subtitle {
+      color: #3d6768; }
     .header_logo_title {
+      color: #345758;
       font-size: 2em;
-      font-style: italic;
+      font-family: "Sorts Mill Goudy Italic", Time, "Times New Roman", serif;
       line-height: 2em;
       letter-spacing: 0;
-      margin-bottom: -0.4em; }
+      margin-bottom: -0.4em;
+      transition: color 0.5s; }
     .header_logo_subtitle {
       font-size: .9em;
-      line-height: 0.5em; }
+      line-height: 0.5em;
+      color: #5a9698;
+      transition: color 0.5s; }
   .header_nav_list {
     list-style-type: none; }
     .header_nav_list li {
@@ -733,7 +776,7 @@ h3, .h3 {
 .intro {
   margin-top: 5em;
   overflow: hidden;
-  background-color: #787481;
+  background-color: #abd6d8;
   text-align: center;
   position: relative;
   padding-bottom: calc( 5em + 70px); }
@@ -741,7 +784,7 @@ h3, .h3 {
     content: '\002767';
     font-size: 100em;
     line-height: 500px;
-    color: #736f7c;
+    color: #a1d1d3;
     top: 0px;
     left: 0px;
     display: block;
@@ -749,7 +792,7 @@ h3, .h3 {
     position: absolute;
     width: 100%; }
   .intro_tagline {
-    color: #363633; }
+    color: #345758; }
   .intro_arrow {
     margin-left: -0; }
     .intro_arrow:before {
@@ -777,74 +820,83 @@ h3, .h3 {
   .intro_skills {
     display: inline-block;
     margin: 0 auto;
-    color: #363633; }
+    color: #345758; }
     .intro_skills li {
-      font-family: "Sorts Mill Goudy", Georgia, serif;
+      font-family: "Sorts Mill Goudy Regular", Time, "Times New Roman", serif;
       font-size: 1.3em;
       font-weight: bold;
       display: inline-block;
       text-align: center;
       padding: 0 1em; }
 
-.work a.work_item {
+.work .work_item {
   margin-top: 2em;
   text-align: center;
   display: block;
   position: relative;
-  padding: .5em; }
-  .work a.work_item:before {
-    content: none;
-    height: 0px; }
-  .work a.work_item:hover:before {
+  padding: .5em;
+  overflow: hidden; }
+  .work .work_item:before {
     content: '';
-    background-color: rgba(220, 214, 222, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    display: block; }
+    height: 0px;
+    display: block;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    z-index: -10;
+    background-color: #afd8da;
+    transition: height 0.2s ease-in, color 0.5s ease; }
+  .work .work_item:hover .work_item_header:before, .work .work_item:active .work_item_header:before, .work .work_item:focus .work_item_header:before {
+    height: 100%; }
 
-.work_item_img-container_img {
-  width: 90%;
-  height: auto;
-  box-shadow: 0px 0px 3px #dcd6de; }
+.work_item_img-container {
+  padding: 1em;
+  display: block; }
+  .work_item_img-container_img {
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 3px #617a89; }
 
 .about {
-  background-color: #f5f4f6; }
+  background-color: #edf6f7; }
   .about_img {
     line-height: 0;
     display: inline-block;
-    box-shadow: 0px 0px 3px #dcd6de; }
+    box-shadow: 0px 0px 3px #fff; }
 
 .contact {
-  background-color: #e8e7ea;
+  background-color: #dceeef;
   overflow: hidden;
   position: relative; }
   .contact:before {
     content: '';
     font-size: 100em;
     line-height: 500px;
-    color: #f5f4f6;
+    color: white;
     top: 0px;
     left: 0px;
     display: block;
     text-align: center;
     position: absolute;
     width: 100%; }
+  .contact_form label {
+    font-family: "Source Sans Pro Bold", Arial, sans-serif;
+    font-weight: normal; }
   .contact_form input, .contact_form textarea {
     padding: 0.4em 0.8em;
     display: inline-block;
     background-color: #fff;
-    border: 3px solid #dbdadd;
+    border: 3px solid #c4e2e3;
     transition: border 0.2s;
     height: auto; }
     .contact_form input:hover, .contact_form textarea:hover {
-      border: 3px solid #a7a4ad; }
+      border: 3px solid #a1d1d3; }
     .contact_form input:focus, .contact_form textarea:focus {
-      border: 3px solid #9e5e87; }
+      border: 3px solid #192323; }
   .contact_form textarea {
-    line-height: 1.1em; }
+    line-height: 1.1em;
+    height: 8em; }
   .contact_form input.button-primary {
     padding: 1.15em 2em;
     font-size: 1em;
@@ -852,9 +904,10 @@ h3, .h3 {
     line-height: 0em;
     transition: background 0.2s;
     text-transform: none;
-    font-weight: 300; }
+    font-weight: 300;
+    border-width: 0px; }
     .contact_form input.button-primary:focus, .contact_form input.button-primary:hover {
-      background-color: #9e5e87; }
+      background-color: #192323; }
   @media (min-width: 850px) {
     .contact_details.columns {
       margin-left: 8%; } }
