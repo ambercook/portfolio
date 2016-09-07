@@ -7,16 +7,16 @@
 	padding-bottom: calc( 5em + 70px );
 
 	&:before {
-      content: '\002767';
-      font-size: 100em;
-      line-height: 500px;
-      color: $primary-color;
-      top: 0px;
-      left: 0px;
-      display: block;
-      text-align: center;
-      position: absolute;
-      width: 100%;
+		content: '\002767';
+		font-size: 100em;
+		line-height: 500px;
+		color: $primary-color;
+		top: 0px;
+		left: 0px;
+		display: block;
+		text-align: center;
+		position: absolute;
+		width: 100%;
     }	
 
 	&_tagline {
