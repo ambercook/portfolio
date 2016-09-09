@@ -7,6 +7,8 @@
 
 		img {
 			width: 95%;
+			-webkit-filter: grayscale(35%);
+			filter: grayscale(35%);
 			border: 4px solid lighten( $primary-color, 10 );
 		}
 

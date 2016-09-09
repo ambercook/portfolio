@@ -1,6 +1,6 @@
 .work {
 
-	.work_item {
+	a.work_item {
 		margin-top: 2em;
 		text-align: center;
 		display:  block;
@@ -10,36 +10,51 @@
 
 		&:before {
 			content: '';
-			width: 100%;
 			height: 0px;
-			display: block;
-			position: absolute;
-			top: 2.5em;
-			left: 0;
-			z-index: -10;
-			background-color: lighten( $primary-color, 4 );
-			transition: height 0.2s ease-in, color 0.5s ease;
 		}
 
 		&:hover, &:active, &:focus {
 
+			
+			.work_item_img-container {
+				background-color: lighten( $primary-color, 3 );
+			}
+			
+			
 			.work_item_header:before {
-				height: 100%;
+				height: 0px;
 			}
 		}
 
 	}
 
 	&_item_img-container {
-
-		padding: 1em;
+		background-color: lighten( $primary-color, 22 );
+		transition: background-color .2s ease-in;
+		padding: 2em 1em;
 		display: block;
+		position: relative;
+		overflow: hidden;
+
+		&:before {
+			content: '\002767';
+			font-size: 70em;
+			line-height: 500px;
+			color: lighten( $primary-color, 15 );
+			top: -40px;
+    		left: -50px;
+			display: block;
+			text-align: center;
+			position: absolute;
+			width: 100%;
+		}
 
 		&_img {
-
+			position: relative;
+			z-index: 20;
 			width: 90%;
 	    	height: auto;
-	    	border: 4px solid $primary-color;
+	    	border: 4px solid lighten( $primary-color, 15 );
 
 		}
 	}
